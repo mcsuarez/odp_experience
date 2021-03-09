@@ -1,0 +1,323 @@
+[ {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://ontology.eil.utoronto.ca/icity/ActivitySpecification/Activity"
+    }, {
+      "@id" : "_:genid5"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://modellingdh.github.io/ont/odp/term/producedObservation"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://modellingdh.github.io/ont/odp/term/Observation"
+  } ]
+}, {
+  "@id" : "_:genid7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://modellingdh.github.io/ont/odp/term/Engagement"
+    }, {
+      "@id" : "http://modellingdh.github.io/ont/odp/term/Observation"
+    }, {
+      "@id" : "http://ontology.eil.utoronto.ca/icity/ActivitySpecification/Activity"
+    }, {
+      "@id" : "http://www.ontologydesignpatterns.org/cp/owl/persons.owl#Person"
+    } ]
+  } ]
+}, {
+  "@id" : "http://modellingdh.github.io/ont/odp/experience",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@id" : "https://orcid.org/0000-0002-3639-3622"
+  }, {
+    "@id" : "https://orcid.org/0000-0002-9272-908X"
+  }, {
+    "@id" : "https://orcid.org/0000-0003-3807-5019"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "en",
+    "@value" : "Experience & Observation (E&O) Pattern"
+  } ],
+  "http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#coversRequirements" : [ {
+    "@language" : "en",
+    "@value" : "In what ways can one person be engaged in a single activity?"
+  }, {
+    "@language" : "en",
+    "@value" : "What personal observations were produced by reflecting upon an activity being carried out?"
+  }, {
+    "@language" : "en",
+    "@value" : "Which activities performed by someone have prompted an observation from that person and which haven't?"
+  } ],
+  "http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#extractedFrom" : [ {
+    "@id" : "https://raw.githubusercontent.com/eureadit/reading-experience-ontology/master/data-model-v2.owl"
+  } ],
+  "http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasComponent" : [ {
+    "@id" : "http://ontology.eil.utoronto.ca/icity/ActivitySpecification"
+  } ],
+  "http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasConsequences" : [ {
+    "@language" : "en",
+    "@value" : "It decomposes the lax notion of experience (e.g. through engaging in reading a book or incidentally hearing some music) into distinguishable elements that can be used in e.g. text annotation with greater precision than with a single named entity representing the experience."
+  } ],
+  "http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasIntent" : [ {
+    "@language" : "en",
+    "@value" : "to represent the epistemological \"missing link\" between a cognitive activity, e.g. the interaction with a cultural object, and any evidence of the effects this activity has on the individuals that are engaged with it; what can collectively be considered as an experience."
+  } ],
+  "http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasUnitTest" : [ {
+    "@language" : "en",
+    "@value" : "PREFIX : <http://modellingdh.github.io/ont/odp/term/>\r\nPREFIX activ: <http://ontology.eil.utoronto.ca/icity/ActivitySpecification/>\r\nSELECT DISTINCT ?activity WHERE {\r\n   { ?activity a :Prompt } \r\n   UNION\r\n   { ?activity a activ:Activity ; :produced [ ] }\r\n}"
+  }, {
+    "@language" : "en",
+    "@value" : "PREFIX : <http://modellingdh.github.io/ont/odp/term/>\r\nPREFIX activ: <http://ontology.eil.utoronto.ca/icity/ActivitySpecification/>\r\nSELECT DISTINCT ?observation WHERE {\r\n   ?activity a activ:Activity\r\n      ; :includes ?observation \r\n   . ?observation a :Observation\r\n}"
+  }, {
+    "@language" : "en",
+    "@value" : "PREFIX : <http://modellingdh.github.io/ont/odp/term/>\r\nSELECT DISTINCT ?engagement ?activity WHERE {\r\n   ?engagement :onActivity ?activity\r\n}"
+  } ],
+  "http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#relatedCPs" : [ {
+    "@id" : "http://ontology.eil.utoronto.ca/icity/ActivitySpecification"
+  }, {
+    "@id" : "http://ontologydesignpatterns.org/cp/owl/transition.owl"
+  }, {
+    "@id" : "http://www.ontologydesignpatterns.org/cp/owl/observation.owl"
+  }, {
+    "@id" : "http://www.ontologydesignpatterns.org/cp/owl/persons.owl"
+  } ],
+  "http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#scenarios" : [ {
+    "@language" : "en",
+    "@value" : "Charles Dickens wrote in his report on visiting a village near Carrara, Italy: \"It contains a beautiful little Theatre, newly built; and it is an interesting custom there, to form the chorus of labourers in the marble quarries, who are self-taught and sing by ear. I heard them in a comic opera, and in an act of “Norma;” and they acquitted themselves very well; unlike the common people of Italy generally, who (with some exceptions among the Neapolitans) sing vilely out of tune, and have very disagreeable singing voices.\"\r\n\r\nhttps://led.kmi.open.ac.uk/entity/lexp/1382364120\r\n\r\nThis passage describes:\r\n- the setting of an activity (description of the Theatre, interest in the village custom)\r\n- the activity (Dickens listening to the marble quarry labourers sing Norma)\r\n- observation on the activities themselves (critique on the chorus' singing performance)\r\n- observation on his engagement in that and prior activities (it was unlike what most Italians he had heard sing)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The E&O pattern focuses on the engagement in an activity, and on the creation of an observation as result of a prompting."
+  }, {
+    "@language" : "en",
+    "@value" : "This content pattern (E&O)  models the observation of experience as resulting from a direct engagement in an activity and reflected in an observation prompted from the person engaged in the activity. \r\nE&O represents an experience through its factual, cognitive, phenomenological and critical coordinates, which all lend themselves to further specialisation in the ontologies where the CP will be instantiated."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@language" : "en",
+    "@value" : "http://ontologydesignpatterns.org/wiki/Submissions:Experience_%26_Observation"
+  } ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "https://raw.githubusercontent.com/modellingDH/odp_experience/master/owl/cp_experience.owl.ttl"
+  } ]
+}, {
+  "@id" : "http://modellingdh.github.io/ont/odp/experienceexampleOfUse",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://modellingdh.github.io/ont/odp/term/Engagement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "The product of a reflection upon an observation, which embodies subjective traits of an experience (Example: \"After reading this passage of 'To Kill a Mockingbird', I came to a clearer understanding of the many facets of social intolerance\")."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class is the core type of entities that represent a reification of one’s involvement in an activity. If, for example, the participant’s reason for their interaction was to write a review for a magazine, this will be encoded in instances of this class."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Engagement"
+  } ]
+}, {
+  "@id" : "http://modellingdh.github.io/ont/odp/term/Observation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "The product of an act of scrutiny which may or may not have been performed with a critical disposition (Example: \"My thoughts from reading this passage of 'To Kill a Mockingbird'\")."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A disjointness or alignment between this class and <http://www.ontologydesignpatterns.org/cp/owl/observation.owl#Observation> in the Observation content pattern is plausible but subject to debate, hence will not be formalised herein."
+  }, {
+    "@language" : "en",
+    "@value" : "An engagement, depending on whether it is emotional, critical or of another nature, is a cognitive process which may or may not generate\r\nconscious output, which is represented by this type.\r\n\r\nNote that different engagements give rise to potentially different observations."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Observation"
+  } ]
+}, {
+  "@id" : "http://modellingdh.github.io/ont/odp/term/Prompting",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://modellingdh.github.io/ont/odp/experienceexampleOfUse" : [ {
+    "@language" : "en",
+    "@value" : "Active readers engaged in the discussion through forum treads and comments. Tthe social engagement is part of the experience, e.g. engaging in discussions with other readers after each issue. Thus, the prompting activity leading to the observation must be considered part of the reading activity.\r\nIn this case,  the observation is created within the frame of the activity, through a sub-activity prompting. Their structural similarity in clearly\r\nexpressed by the mereological relation between the activity and the prompt within it.\r\n\r\nExample: An active reader r1 is engaged in an activity a1 which includes an observation o1 created through a prompting p1, sub activity of a1."
+  }, {
+    "@language" : "en",
+    "@value" : "Passive readers exposed to comments from other readers. Tthe reading activity includes being exposed to other readers' observations and, therefore, an experience mediated by comments, votes, sponsorship and other types of social media feedback surrounding the content.\r\nIn this case, the observation included in the activity is not the result of the activity itself.\r\n\r\nExample: A passive reader r1 is engaged in an activity a1 which includes an observation o1, the activity a1 and included observation o1 are reected in the observation o2 created through a prompting p1."
+  } ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "Prompting is an ‘Activity’ leading to the generation of an Observation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The stimulus within an activity that causes an observation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Prompting"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://modellingdh.github.io/ont/odp/term/Engagement"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid3"
+  } ]
+}, {
+  "@id" : "http://modellingdh.github.io/ont/odp/term/hasEngagement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has engagement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://modellingdh.github.io/ont/odp/term/Engagement"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://modellingdh.github.io/ont/odp/term/inActivity"
+  } ]
+}, {
+  "@id" : "http://modellingdh.github.io/ont/odp/term/inActivity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "what activity/ies are affecting or affected by a certain engagement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Connects an activity with the many possible ways to engage in it."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://modellingdh.github.io/ont/odp/term/Engagement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "in activity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://ontology.eil.utoronto.ca/icity/ActivitySpecification/Activity"
+  } ]
+}, {
+  "@id" : "http://modellingdh.github.io/ont/odp/term/includes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "A relation of mereological nature that connects a given observation with the activity that originates them: it strengthens the argument that observations are always active processes from a cognitive standpoint, regardless of how conscious they may be."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A standard mereological property from another content pattern may be used in lieu of this one and therefore aligned with it."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://ontology.eil.utoronto.ca/icity/ActivitySpecification/Activity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "includes"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://modellingdh.github.io/ont/odp/term/Observation"
+  } ]
+}, {
+  "@id" : "http://modellingdh.github.io/ont/odp/term/isEngagedIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "Because an activity may engage other participants than the one performing it, engagements are in general considered individual rather than collective, therefore each participants has their own engagement and only some of them will be conscious and/or documented."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/cp/owl/persons.owl#Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "engaged in"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://modellingdh.github.io/ont/odp/term/Engagement"
+  } ]
+}, {
+  "@id" : "http://modellingdh.github.io/ont/odp/term/isReflectedUponIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is reflected upon in"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://modellingdh.github.io/ont/odp/term/isReflectionOn"
+  } ]
+}, {
+  "@id" : "http://modellingdh.github.io/ont/odp/term/isReflectionOn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "Used to connect the subjective elements of an experience with the corresponding observation, which is extrapolated from the content being interacted with and in itself may not be including a critique."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://modellingdh.github.io/ont/odp/term/Observation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is reflection on"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://modellingdh.github.io/ont/odp/term/Engagement"
+  } ]
+}, {
+  "@id" : "http://modellingdh.github.io/ont/odp/term/producedObservation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "This property can be used to denote that something is (even indirectly, not necessary through direct reflection) responsible for the existence of an observation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "produced observation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://modellingdh.github.io/ont/odp/term/Observation"
+  } ],
+  "http://www.w3.org/2002/07/owl#propertyChainAxiom" : [ {
+    "@list" : [ {
+      "@id" : "http://modellingdh.github.io/ont/odp/term/hasEngagement"
+    }, {
+      "@id" : "http://modellingdh.github.io/ont/odp/term/isReflectedUponIn"
+    } ]
+  } ]
+}, {
+  "@id" : "http://ontology.eil.utoronto.ca/icity/ActivitySpecification/Activity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "An occurrence being led by an active - though not necessarily conscious - agent."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Activity"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.ontologydesignpatterns.org/cp/owl/persons.owl#Person",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Person"
+  } ]
+} ]

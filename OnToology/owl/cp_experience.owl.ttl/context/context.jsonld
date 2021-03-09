@@ -1,0 +1,92 @@
+{
+  "@context" : {
+    "hasUnitTest" : {
+      "@id" : "http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasUnitTest"
+    },
+    "includes" : {
+      "@id" : "http://modellingdh.github.io/ont/odp/term/includes",
+      "@type" : "@id"
+    },
+    "experienceexampleOfUse" : {
+      "@id" : "http://modellingdh.github.io/ont/odp/experienceexampleOfUse"
+    },
+    "isEngagedIn" : {
+      "@id" : "http://modellingdh.github.io/ont/odp/term/isEngagedIn",
+      "@type" : "@id"
+    },
+    "extractedFrom" : {
+      "@id" : "http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#extractedFrom"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "isReflectedUponIn" : {
+      "@id" : "http://modellingdh.github.io/ont/odp/term/isReflectedUponIn",
+      "@type" : "@id"
+    },
+    "Activity" : {
+      "@id" : "http://ontology.eil.utoronto.ca/icity/ActivitySpecification/Activity"
+    },
+    "Person" : {
+      "@id" : "http://www.ontologydesignpatterns.org/cp/owl/persons.owl#Person"
+    },
+    "hasEngagement" : {
+      "@id" : "http://modellingdh.github.io/ont/odp/term/hasEngagement",
+      "@type" : "@id"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator"
+    },
+    "Engagement" : {
+      "@id" : "http://modellingdh.github.io/ont/odp/term/Engagement"
+    },
+    "inActivity" : {
+      "@id" : "http://modellingdh.github.io/ont/odp/term/inActivity",
+      "@type" : "@id"
+    },
+    "isReflectionOn" : {
+      "@id" : "http://modellingdh.github.io/ont/odp/term/isReflectionOn",
+      "@type" : "@id"
+    },
+    "relatedCPs" : {
+      "@id" : "http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#relatedCPs"
+    },
+    "Prompting" : {
+      "@id" : "http://modellingdh.github.io/ont/odp/term/Prompting"
+    },
+    "scenarios" : {
+      "@id" : "http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#scenarios"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title"
+    },
+    "coversRequirements" : {
+      "@id" : "http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#coversRequirements"
+    },
+    "seeAlso" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso"
+    },
+    "hasConsequences" : {
+      "@id" : "http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasConsequences"
+    },
+    "hasIntent" : {
+      "@id" : "http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasIntent"
+    },
+    "producedObservation" : {
+      "@id" : "http://modellingdh.github.io/ont/odp/term/producedObservation",
+      "@type" : "@id"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "hasComponent" : {
+      "@id" : "http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasComponent"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/terms/description"
+    },
+    "Observation" : {
+      "@id" : "http://modellingdh.github.io/ont/odp/term/Observation"
+    }
+  }
+}

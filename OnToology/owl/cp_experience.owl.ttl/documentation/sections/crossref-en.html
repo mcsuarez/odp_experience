@@ -1,0 +1,422 @@
+<h2 id="crossreference" class="list">Cross reference for Experience & Observation (E&O) Pattern classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by Experience & Observation (E&O) Pattern.
+<div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
+   <h3 id="classes-headline" class="list">Classes</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#http://ontology.eil.utoronto.ca/icity/ActivitySpecification/Activity"
+            title="http://ontology.eil.utoronto.ca/icity/ActivitySpecification/Activity">Activity</a>
+      </li>
+      <li>
+         <a href="#http://modellingdh.github.io/ont/odp/term/Engagement"
+            title="http://modellingdh.github.io/ont/odp/term/Engagement">Engagement</a>
+      </li>
+      <li>
+         <a href="#http://modellingdh.github.io/ont/odp/term/Observation"
+            title="http://modellingdh.github.io/ont/odp/term/Observation">Observation</a>
+      </li>
+      <li>
+         <a href="#http://www.ontologydesignpatterns.org/cp/owl/persons.owl#Person"
+            title="http://www.ontologydesignpatterns.org/cp/owl/persons.owl#Person">Person</a>
+      </li>
+      <li>
+         <a href="#http://modellingdh.github.io/ont/odp/term/Prompting"
+            title="http://modellingdh.github.io/ont/odp/term/Prompting">Prompting</a>
+      </li>
+   </ul>
+   <div class="entity" id="http://ontology.eil.utoronto.ca/icity/ActivitySpecification/Activity">
+      <h3>Activity<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://ontology.eil.utoronto.ca/icity/ActivitySpecification/Activity</p>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#http://modellingdh.github.io/ont/odp/term/includes"
+               title="http://modellingdh.github.io/ont/odp/term/includes">includes</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#http://modellingdh.github.io/ont/odp/term/inActivity"
+               title="http://modellingdh.github.io/ont/odp/term/inActivity">in activity</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#http://modellingdh.github.io/ont/odp/term/Engagement"
+               title="http://modellingdh.github.io/ont/odp/term/Engagement">Engagement</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#http://modellingdh.github.io/ont/odp/term/Observation"
+               title="http://modellingdh.github.io/ont/odp/term/Observation">Observation</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#http://www.ontologydesignpatterns.org/cp/owl/persons.owl#Person"
+               title="http://www.ontologydesignpatterns.org/cp/owl/persons.owl#Person">Person</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://modellingdh.github.io/ont/odp/term/Engagement">
+      <h3>Engagement<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://modellingdh.github.io/ont/odp/term/Engagement</p>
+      <div class="comment">
+         <span class="markdown">This class is the core type of entities that represent a reification of one’s involvement in an activity. If, for example, the participant’s reason for their interaction was to write a review for a magazine, this will be encoded in instances of this class.</span>
+      </div>
+      <dl class="description">
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#http://modellingdh.github.io/ont/odp/term/Prompting"
+               title="http://modellingdh.github.io/ont/odp/term/Prompting">Prompting</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#http://modellingdh.github.io/ont/odp/term/inActivity"
+               title="http://modellingdh.github.io/ont/odp/term/inActivity">in activity</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#http://modellingdh.github.io/ont/odp/term/isEngagedIn"
+               title="http://modellingdh.github.io/ont/odp/term/isEngagedIn">engaged in</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#http://modellingdh.github.io/ont/odp/term/hasEngagement"
+               title="http://modellingdh.github.io/ont/odp/term/hasEngagement">has engagement</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#http://modellingdh.github.io/ont/odp/term/isReflectionOn"
+               title="http://modellingdh.github.io/ont/odp/term/isReflectionOn">is reflection on</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#http://modellingdh.github.io/ont/odp/term/Observation"
+               title="http://modellingdh.github.io/ont/odp/term/Observation">Observation</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#http://ontology.eil.utoronto.ca/icity/ActivitySpecification/Activity"
+               title="http://ontology.eil.utoronto.ca/icity/ActivitySpecification/Activity">Activity</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#http://www.ontologydesignpatterns.org/cp/owl/persons.owl#Person"
+               title="http://www.ontologydesignpatterns.org/cp/owl/persons.owl#Person">Person</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://modellingdh.github.io/ont/odp/term/Observation">
+      <h3>Observation<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://modellingdh.github.io/ont/odp/term/Observation</p>
+      <div class="comment">
+         <span class="markdown">A disjointness or alignment between this class and &lt;http://www.ontologydesignpatterns.org/cp/owl/observation.owl#Observation&gt; in the Observation content pattern is plausible but subject to debate, hence will not be formalised herein.</span>
+      </div>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#http://modellingdh.github.io/ont/odp/term/isReflectionOn"
+               title="http://modellingdh.github.io/ont/odp/term/isReflectionOn">is reflection on</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#http://modellingdh.github.io/ont/odp/term/includes"
+               title="http://modellingdh.github.io/ont/odp/term/includes">includes</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#http://modellingdh.github.io/ont/odp/term/producedObservation"
+               title="http://modellingdh.github.io/ont/odp/term/producedObservation">produced observation</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#http://modellingdh.github.io/ont/odp/term/Engagement"
+               title="http://modellingdh.github.io/ont/odp/term/Engagement">Engagement</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#http://ontology.eil.utoronto.ca/icity/ActivitySpecification/Activity"
+               title="http://ontology.eil.utoronto.ca/icity/ActivitySpecification/Activity">Activity</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#http://www.ontologydesignpatterns.org/cp/owl/persons.owl#Person"
+               title="http://www.ontologydesignpatterns.org/cp/owl/persons.owl#Person">Person</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://www.ontologydesignpatterns.org/cp/owl/persons.owl#Person">
+      <h3>Person<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.ontologydesignpatterns.org/cp/owl/persons.owl#Person</p>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#http://modellingdh.github.io/ont/odp/term/isEngagedIn"
+               title="http://modellingdh.github.io/ont/odp/term/isEngagedIn">engaged in</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#http://modellingdh.github.io/ont/odp/term/Engagement"
+               title="http://modellingdh.github.io/ont/odp/term/Engagement">Engagement</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#http://modellingdh.github.io/ont/odp/term/Observation"
+               title="http://modellingdh.github.io/ont/odp/term/Observation">Observation</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#http://ontology.eil.utoronto.ca/icity/ActivitySpecification/Activity"
+               title="http://ontology.eil.utoronto.ca/icity/ActivitySpecification/Activity">Activity</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://modellingdh.github.io/ont/odp/term/Prompting">
+      <h3>Prompting<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://modellingdh.github.io/ont/odp/term/Prompting</p>
+      <div class="comment">
+         <span class="markdown">The stimulus within an activity that causes an observation.</span>
+      </div>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <a href="#http://ontology.eil.utoronto.ca/icity/ActivitySpecification/Activity"
+               title="http://ontology.eil.utoronto.ca/icity/ActivitySpecification/Activity">Activity</a>
+            <sup class="type-c" title="class">c</sup> 
+            <span class="logic">and</span> (<a href="#http://modellingdh.github.io/ont/odp/term/producedObservation"
+               title="http://modellingdh.github.io/ont/odp/term/producedObservation">produced observation</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">some</span> 
+            <a href="#http://modellingdh.github.io/ont/odp/term/Observation"
+               title="http://modellingdh.github.io/ont/odp/term/Observation">Observation</a>
+            <sup class="type-c" title="class">c</sup>)</dd>
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#http://modellingdh.github.io/ont/odp/term/Engagement"
+               title="http://modellingdh.github.io/ont/odp/term/Engagement">Engagement</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+</div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
+   <h3 id="properties" class="list">Object Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#http://modellingdh.github.io/ont/odp/term/isEngagedIn"
+            title="http://modellingdh.github.io/ont/odp/term/isEngagedIn">engaged in</a>
+      </li>
+      <li>
+         <a href="#http://modellingdh.github.io/ont/odp/term/hasEngagement"
+            title="http://modellingdh.github.io/ont/odp/term/hasEngagement">has engagement</a>
+      </li>
+      <li>
+         <a href="#http://modellingdh.github.io/ont/odp/term/inActivity"
+            title="http://modellingdh.github.io/ont/odp/term/inActivity">in activity</a>
+      </li>
+      <li>
+         <a href="#http://modellingdh.github.io/ont/odp/term/includes"
+            title="http://modellingdh.github.io/ont/odp/term/includes">includes</a>
+      </li>
+      <li>
+         <a href="#http://modellingdh.github.io/ont/odp/term/isReflectedUponIn"
+            title="http://modellingdh.github.io/ont/odp/term/isReflectedUponIn">is reflected upon in</a>
+      </li>
+      <li>
+         <a href="#http://modellingdh.github.io/ont/odp/term/isReflectionOn"
+            title="http://modellingdh.github.io/ont/odp/term/isReflectionOn">is reflection on</a>
+      </li>
+      <li>
+         <a href="#http://modellingdh.github.io/ont/odp/term/producedObservation"
+            title="http://modellingdh.github.io/ont/odp/term/producedObservation">produced observation</a>
+      </li>
+   </ul>
+   <div class="entity" id="http://modellingdh.github.io/ont/odp/term/isEngagedIn">
+      <h3>engaged in<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://modellingdh.github.io/ont/odp/term/isEngagedIn</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://www.ontologydesignpatterns.org/cp/owl/persons.owl#Person"
+                  title="http://www.ontologydesignpatterns.org/cp/owl/persons.owl#Person">Person</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#http://modellingdh.github.io/ont/odp/term/Engagement"
+                  title="http://modellingdh.github.io/ont/odp/term/Engagement">Engagement</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://modellingdh.github.io/ont/odp/term/hasEngagement">
+      <h3>has engagement<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://modellingdh.github.io/ont/odp/term/hasEngagement</p>
+      <div class="description">
+         <dl>
+            <dt>has range</dt>
+            <dd>
+               <a href="#http://modellingdh.github.io/ont/odp/term/Engagement"
+                  title="http://modellingdh.github.io/ont/odp/term/Engagement">Engagement</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#http://modellingdh.github.io/ont/odp/term/inActivity"
+                  title="http://modellingdh.github.io/ont/odp/term/inActivity">in activity</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://modellingdh.github.io/ont/odp/term/inActivity">
+      <h3>in activity<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://modellingdh.github.io/ont/odp/term/inActivity</p>
+      <div class="comment">
+         <span class="markdown">Connects an activity with the many possible ways to engage in it.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://modellingdh.github.io/ont/odp/term/Engagement"
+                  title="http://modellingdh.github.io/ont/odp/term/Engagement">Engagement</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#http://ontology.eil.utoronto.ca/icity/ActivitySpecification/Activity"
+                  title="http://ontology.eil.utoronto.ca/icity/ActivitySpecification/Activity">Activity</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#http://modellingdh.github.io/ont/odp/term/hasEngagement"
+                  title="http://modellingdh.github.io/ont/odp/term/hasEngagement">has engagement</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://modellingdh.github.io/ont/odp/term/includes">
+      <h3>includes<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://modellingdh.github.io/ont/odp/term/includes</p>
+      <div class="comment">
+         <span class="markdown">A standard mereological property from another content pattern may be used in lieu of this one and therefore aligned with it.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://ontology.eil.utoronto.ca/icity/ActivitySpecification/Activity"
+                  title="http://ontology.eil.utoronto.ca/icity/ActivitySpecification/Activity">Activity</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#http://modellingdh.github.io/ont/odp/term/Observation"
+                  title="http://modellingdh.github.io/ont/odp/term/Observation">Observation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://modellingdh.github.io/ont/odp/term/isReflectedUponIn">
+      <h3>is reflected upon in<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://modellingdh.github.io/ont/odp/term/isReflectedUponIn</p>
+      <div class="description">
+         <dl>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#http://modellingdh.github.io/ont/odp/term/isReflectionOn"
+                  title="http://modellingdh.github.io/ont/odp/term/isReflectionOn">is reflection on</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://modellingdh.github.io/ont/odp/term/isReflectionOn">
+      <h3>is reflection on<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://modellingdh.github.io/ont/odp/term/isReflectionOn</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://modellingdh.github.io/ont/odp/term/Observation"
+                  title="http://modellingdh.github.io/ont/odp/term/Observation">Observation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#http://modellingdh.github.io/ont/odp/term/Engagement"
+                  title="http://modellingdh.github.io/ont/odp/term/Engagement">Engagement</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#http://modellingdh.github.io/ont/odp/term/isReflectedUponIn"
+                  title="http://modellingdh.github.io/ont/odp/term/isReflectedUponIn">is reflected upon in</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://modellingdh.github.io/ont/odp/term/producedObservation">
+      <h3>produced observation<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://modellingdh.github.io/ont/odp/term/producedObservation</p>
+      <div class="description">
+         <dl>
+            <dt>has range</dt>
+            <dd>
+               <a href="#http://modellingdh.github.io/ont/odp/term/Observation"
+                  title="http://modellingdh.github.io/ont/odp/term/Observation">Observation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has sub-property chains</dt>
+            <dd>
+               <a href="#http://modellingdh.github.io/ont/odp/term/hasEngagement"
+                  title="http://modellingdh.github.io/ont/odp/term/hasEngagement">has engagement</a>
+               <sup class="type-op" title="object property">op</sup> 
+               <span class="logic">o</span> 
+               <a href="#http://modellingdh.github.io/ont/odp/term/isReflectedUponIn"
+                  title="http://modellingdh.github.io/ont/odp/term/isReflectedUponIn">is reflected upon in</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+<sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals
+</div>
+</div>
